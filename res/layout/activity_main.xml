@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:uiscroll="http://schemas.android.com/apk/res/com.chris.apps.uiscroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.chris.apps.uiscroll.UIScrollLayout
+        android:id="@+id/scrollLayout"
+        uiscroll:view_type="navigator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout 
+	        android:layout_width="200dip"
+	        android:layout_height="match_parent"
+	        android:background="#336699">
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:text="@string/no1" />
+	    </RelativeLayout>
+	    
+        <ListView 
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:cacheColorHint="#00000000"/>
+        
+        <!-- 
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#99ff33">
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:text="@string/no2" />
+	    </RelativeLayout>
+	     -->
+	     
+        <RelativeLayout 
+	        android:layout_width="200dip"
+	        android:layout_height="match_parent"
+	        android:background="#9933ff">
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:text="@string/no3" />
+	    </RelativeLayout>
+	    <!-- 
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#123456">
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:text="@string/no4" />
+	    </RelativeLayout>
+         -->
+    </com.chris.apps.uiscroll.UIScrollLayout>
+
+</RelativeLayout>
